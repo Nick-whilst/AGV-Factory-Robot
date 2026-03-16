@@ -1,0 +1,39 @@
+【ESP32-WROOM-32D 主控板接线】
+
+摄像头 (OV7670) → ESP32 引脚：
+- D0 → GPIO5
+- D1 → GPIO18
+- D2 → GPIO19
+- D3 → GPIO21
+- D4 → GPIO22
+- D5 → GPIO23
+- D6 → GPIO25
+- D7 → GPIO27
+- XCLK → GPIO26
+- PCLK → GPIO24
+- VSYNC → GPIO20
+- HREF → GPIO17
+- SDA → GPIO14 (I2C)
+- SCL → GPIO15 (I2C)
+
+传感器：
+- 左红外 (TCRT5000) → GPIO3
+- 右红外 (TCRT5000) → GPIO4
+
+电机驱动 (TB6612FNG)：
+- 左电机方向 → GPIO18
+- 左电机PWM → GPIO19
+- 右电机方向 → GPIO23
+- 右电机PWM → GPIO22
+
+状态指示灯：
+- LED → GPIO2
+
+电源：
+- 12V锂电池 → 降压模块 (12V→5V) → ESP32 3.3V
+- 12V 直接供电给 TB6612FNG 模块和电机
+
+树莓派零W 与 ESP32 通信：
+- 树莓派 TX → ESP32 RX (GPIO16)
+- 树莓派 RX → ESP32 TX (GPIO17)
+- GND 共地
