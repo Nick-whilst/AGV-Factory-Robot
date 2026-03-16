@@ -1,0 +1,65 @@
+solid AGV_Chassis
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 0.000000 0.000000 0.000000
+      vertex 200.000000 0.000000 0.000000
+      vertex 200.000000 150.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 0.000000 0.000000 0.000000
+      vertex 200.000000 150.000000 0.000000
+      vertex 0.000000 150.000000 0.000000
+    endloop
+  endfacet
+
+  # 电机安装孔（两个）
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 20.000000 30.000000 50.000000
+      vertex 20.000000 30.000000 0.000000
+      vertex 20.000000 40.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 20.000000 40.000000 0.000000
+      vertex 20.000000 40.000000 50.000000
+      vertex 20.000000 30.000000 50.000000
+    endloop
+  endfacet
+
+  # 电池仓（长方形凹槽）
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 100.000000 80.000000 0.000000
+      vertex 100.000000 100.000000 0.000000
+      vertex 140.000000 100.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 100.000000 80.000000 0.000000
+      vertex 140.000000 100.000000 0.000000
+      vertex 140.000000 80.000000 0.000000
+    endloop
+  endfacet
+
+  # 摄像头支架（圆形凸起）
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 100.000000 50.000000 0.000000
+      vertex 100.000000 50.000000 10.000000
+      vertex 105.000000 50.000000 10.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 100.000000 50.000000 0.000000
+      vertex 105.000000 50.000000 10.000000
+      vertex 105.000000 55.000000 10.000000
+    endloop
+  endfacet
+
+endsolid AGV_Chassis
