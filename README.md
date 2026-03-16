@@ -47,18 +47,3 @@ cd raspberry-pi
 chmod +x install.sh
 ./install.sh
 python3 qr_scanner.py
-
-
----
-
-###  3. 生成 `parts_list.csv`（采购清单）
-
-```csv
-Name,Model,Quantity,Link
-ESP32-WROOM-32D,ESP32-WROOM-32D,1,https://s.click.aliexpress.com/e/_cKJzZa
-TB6612FNG Motor Driver,TB6612FNG,1,https://s.click.aliexpress.com/e/_cKJzZa
-12V DC Motor,12V 100RPM,2,https://s.click.aliexpress.com/e/_cKJzZa
-OV7670 Camera Module,OV7670,1,https://s.click.aliexpress.com/e/_cKJzZa
-TCRT5000 Infrared Sensor,TCRT5000,4,https://s.click.aliexpress.com/e/_cKJzZa
-12V 5Ah Li-ion Battery,12V 5Ah,1,https://s.click.aliexpress.com/e/_cKJzZa
-Aluminum Chassis,200x150mm,1,https://s.click.aliexpress.com/e/_cKJzZa
